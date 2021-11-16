@@ -187,7 +187,7 @@ function (add_ida_plugin plugin_name)
     target_link_libraries(${plugin_name} PUBLIC ${ida_libraries})
 
     # Define install rule
-    install(TARGETS ${plugin_name} DESTINATION plugins)
+    install(TARGETS ${plugin_name} DESTINATION ${IDA_INSTALL_DIR}/plugins)
 
     # When generating for Visual Studio, 
     # generate user file for convenient debugging support.
